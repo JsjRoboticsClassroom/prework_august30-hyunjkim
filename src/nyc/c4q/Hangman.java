@@ -17,10 +17,11 @@ public class Hangman {
         return mMisses;
     }
 
-    public void readLetter() {
+    public String readLetter() {
         Scanner scanner = new Scanner(System.in);
         char input = scanner.next().charAt(0);
         mLastGuess = Character.toUpperCase(input);
+        return null;
     }
 
     public void promptPlayer(String string) {
